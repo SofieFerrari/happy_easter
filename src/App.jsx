@@ -42,7 +42,7 @@ anime({
 				</div>
 			</div>
 			<div className="relative overflow-hidden w-full h-24">
-				<div className="absolute bottom-[-6rem] right-0 w-24 h-24">
+				<div className="absolute bottom-0 right-0 w-24 h-24">
 					<img className="bunny h-24" src="/bunny-8716426.svg" alt="Bunny" />
 				</div>
 			</div>
