@@ -2,27 +2,27 @@ import React, { useEffect } from "react";
 import anime from "animejs";
 
 const App = () => {
-useEffect(() => {
-	anime({
-		targets: ".circle",
-		translateY: [100, -100, 100],
-		easing: "easeInOutSine",
-		duration: 2000,
-		loop: true,
-		direction: "alternate",
-		delay: anime.stagger(600),
-	});
-
-anime({
-	targets: ".bunny",
-	translateY: [0, -80, 0],
-	easing: "easeInOutSine",
-	duration: 7000,
-	direction: "alternate",
-	loop: true,
-	delay: anime.stagger(2000),
-});
-}, []);
+	useEffect(() => {
+		// Animation för cirklar
+		anime({
+			targets: ".circle",
+			translateY: [100, -100, 100],
+			easing: "easeInOutSine",
+			duration: 2000,
+			loop: true,
+			direction: "alternate",
+			delay: anime.stagger(600),
+		});
+		anime({
+			targets: ".bunny",
+			translateY: ["0", "-100"],
+			easing: "easeInOutSine",
+			duration: 2000,
+			direction: "alternate",
+			loop: true,
+			delay: 2000,
+		});
+	}, []);
 
 	return (
 		<>
@@ -41,9 +41,9 @@ anime({
 					<div className="circle w-26 h-35 bg-blue-400 shadow-xl rounded-full relative"></div>
 				</div>
 			</div>
-			<div className="relative overflow-hidden w-full h-24">
-				<div className="absolute bottom-0 right-0 w-24 h-24">
-					<img className="bunny h-24" src="/bunny-8716426.svg" alt="Bunny" />
+			<div className="relative w-full">
+				<div className="absolute bottom-[-6rem] right-0 w-24 h-24">
+					<img className="bunny h-20" src="/bunny-8716426.svg" alt="Bunny" />
 				</div>
 			</div>
 		</>
