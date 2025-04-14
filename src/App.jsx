@@ -27,7 +27,7 @@ anime({
 	return (
 		<>
 			<div className="flex justify-center flex-col min-h-screen">
-				<div className="text-center mt-50 text-9xl font-bold text-yellow-400">
+				<div className="text-center text-9xl font-bold text-yellow-400">
 					Glad påsk!
 				</div>
 				<div className="text-center text-3xl font-bold text-pink-300">
